@@ -5,9 +5,9 @@ const Row = (props) => {
   const { row, boardState, symbolsMap, onNewMove, active } = props
 
   const cols = []
-  for (const i = 0; i < 4; i++) {
-    const id = row * 4 + i
-    const marking = boardState[id]
+  for (var i = 0; i < 4; i++) {
+    var id = row * 4 + i
+    var marking = boardState[id]
     cols.push(
       <Column
         key={id + "-" + marking}
